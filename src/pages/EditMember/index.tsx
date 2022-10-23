@@ -95,7 +95,7 @@ const EditMember: React.FC = () => {
                 });
             }
         }
-    },[addToast, createMember, navigate]);
+    },[addToast, createMember, navigate, member.id, updateMember]);
 
     return(
         <>

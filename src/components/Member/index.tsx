@@ -64,7 +64,7 @@ const Member: React.FC<MemberData> = ( member : MemberData) => {
         
         updateMember(member.id);
         navigate(`/edit/${member.id}`);
-    }, []);
+    }, [member.id, navigate, updateMember]);
     return(
         <Container>
             <img src={member.foto_url ? `http://54.207.229.94:3333/files/${member.foto_url}` : semFoto} alt="Foto do Membro" />
@@ -80,7 +80,7 @@ const Member: React.FC<MemberData> = ( member : MemberData) => {
                 <img src={Trash} alt="Lixeira" />
                 Deletar Membro
             </button>
-            <a target="_blank" href={`https://gerar-carteirinha.000webhostapp.com/?nome=${member.nome}&mae=${member.nome_mae}&pai=${member.nome_pai}&naturalidade=${member.naturalidade}&nacionalidade=${member.nacionalidade}&estado_civil=${member.estado_civil}&rg=${member.rg}&cpf=${member.cpf}&batismo=${member.data_batismo}&nascimento=${member.data_nascimento}&foto_url=${member.foto_url}`}>
+            <a target="_blank" rel="noreferrer" href={`https://gerar-carteirinha.000webhostapp.com/?nome=${member.nome}&mae=${member.nome_mae}&pai=${member.nome_pai}&naturalidade=${member.naturalidade}&nacionalidade=${member.nacionalidade}&estado_civil=${member.estado_civil}&rg=${member.rg}&cpf=${member.cpf}&batismo=${member.data_batismo}&nascimento=${member.data_nascimento}&foto_url=${member.foto_url}`}>
                 teste
             </a>
         </Container>

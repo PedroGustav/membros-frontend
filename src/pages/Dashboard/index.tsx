@@ -3,7 +3,6 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Member from '../../components/Member';
 import NewMemberButton from '../../components/NewMemberButton';
-import SearchInput from '../../components/SearchInput';
 import api from '../../services/api';
 import { Container } from './styles';
 
