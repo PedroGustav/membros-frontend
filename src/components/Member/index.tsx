@@ -67,7 +67,7 @@ const Member: React.FC<MemberData> = ( member : MemberData) => {
     }, [member.id, navigate, updateMember]);
     return(
         <Container>
-            <img src={member.foto_url ? `http://54.207.229.94:3333/files/${member.foto_url}` : semFoto} alt="Foto do Membro" />
+            <img src={member.foto_url ? `https://membros-adtacima.herokuapp.com/files/${member.foto_url}` : semFoto} alt="Foto do Membro" />
             <strong>{apresentationName}</strong>
             <span><p>Data de batismo:</p> {member.data_batismo}</span>
             

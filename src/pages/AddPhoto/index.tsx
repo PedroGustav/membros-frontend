@@ -49,7 +49,7 @@ const AddPhoto: React.FC = () => {
         <Header title="Adcinonar Foto"/>
         <Container>
             <input type="file" id="photo" onChange={handleUpdateAvatar}/>
-            <img src={hasPhoto ? `http://10.0.0.41:3333/files/${hasPhoto}` : noPhoto} alt="Foto" />
+            <img src={hasPhoto ? `https://membros-adtacima.herokuapp.com/files/${hasPhoto}` : noPhoto} alt="Foto" />
             <p>Agora precisamos escolher uma foto para seu cartão de membro</p>
 
             <button  onClick={handleFinishRegister}className="submit-photo">Finalizar Cadastro</button>
