@@ -30,7 +30,7 @@ export interface CreateMemberData{
 const EditMember: React.FC = () => {
     const formRef = useRef<FormHandles>(null);
     let { id } = useParams();
-    const { member, createMember, updateMember } = useMember();
+    const { member, updateMember } = useMember();
     const { addToast } = useToast();
     const navigate = useNavigate();
     useEffect(() => {
